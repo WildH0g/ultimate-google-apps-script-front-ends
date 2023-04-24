@@ -1,0 +1,17 @@
+{
+  "name": "gemoji",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:push": "vite build && clasp push",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.60",
+    "vite": "^4.2.0",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}

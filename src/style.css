@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 300px;
   height: 100vh;
-  border: 1px solid red;
+  border: 1px solid black;
   float: right;
   display: grid;
   gap: 5px;
@@ -27,7 +27,6 @@ sidebar > #search {
 
 sidebar > #categories {
   grid-area: categories;
-  /* grid-template-rows: 1fr; */
 }
 
 sidebar > #emojis {
@@ -39,8 +38,8 @@ sidebar > #recent {
 }
 
 .sidebar-child {
-  border: 1px solid blue;
   padding: 0;
+  border-bottom: 1px solid black;
 }
 
 #categories {

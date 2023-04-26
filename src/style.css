@@ -92,3 +92,7 @@ sidebar > #recent {
 .emoji-row {
   margin-left: 16px;
 }
+
+.category {
+  cursor: pointer;
+}

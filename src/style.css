@@ -85,5 +85,10 @@ sidebar > #recent {
 
 .emoji {
   cursor: pointer;
-  /* width: 24px; */
+  margin: 8px;
+  display: inline-grid;
+}
+
+.emoji-row {
+  margin-left: 16px;
 }

@@ -28,7 +28,7 @@ function showEmojis(emojiAr) {
     (emojiAr
       .map(
         (emojiObj, i) => /* html */ `
-  <span class="emoji" 
+  <span class="m-[8px] cursor-pointer display hover:rotate-[405deg] hover:scale-150 transition-all duration-500 inline-grid emoji" 
     title="${emojiObj.name}" 
     data-emoji="${emojiObj.emoji}" 
     data-emoji-name="${emojiObj.name}"

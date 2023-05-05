@@ -9,81 +9,95 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Emojibar</title>
   </head>
   <body>
-    <div class="sidebar">
+    <div class="sidebar border-l-[1px] bg-blue-50">
       <div id="about" class="sidebar-child">
-        <h1>Welcome to Emojibar!</h1>
+        <h1
+          class="text-purple-500 text-2xl font-bold uppercase tracking-wide animate-bounce pt-3"
+        >
+          🍺&nbsp;Emojibar&nbsp;🍷
+        </h1>
+        <h2 class="text-gray-700 text-xl font-semibold">
+          Effortlessly Add Emojis to Google Sheets
+        </h2>
       </div>
       <div class="sidebar-child" id="search">
-        <div></div>
-        <div id="search-bar">
-          <span id="search-symbol" class="material-symbols-outlined">
-            search </span
-          ><input placehoder="Search" id="search-bar" />
+        <div
+          class="mx-auto my-auto mt-5 flex w-auto items-center rounded-full border hover:shadow-md pl-5"
+        >
+          <span id="search-symbol" class="material-symbols-outlined text-black">
+            search
+          </span>
+          <input
+            type="text"
+            class="bg-transparent rounded-full outline-none"
+            placeholder="Search emojis"
+            id="search-bar"
+          />
         </div>
-        <div></div>
       </div>
-      <div class="sidebar-child" id="categories">
+      <div class="sidebar-child border-t-[1px] border-b-[1px]" id="categories">
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Smileys and Emotion"
           data-category="Smileys_+_Emotion"
         >
           mood
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="People & Body"
           data-category="People_+_Body"
         >
           emoji_people
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Animals & Nature"
           data-category="Animals_+_Nature"
         >
           emoji_nature
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Food & Drink"
           data-category="Food_+_Drink"
         >
           emoji_food_beverage
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Travel & Places"
           data-category="Travel_+_Places"
         >
           emoji_transportation
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Activities"
           data-category="Activities"
         >
           exercise
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Objects"
           data-category="Objects"
         >
           emoji_objects
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Symbols"
           data-category="Symbols"
         >
           emoji_symbols
         </span>
         <span
-          class="material-symbols-outlined category"
+          class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Flags"
           data-category="Flags"
         >
@@ -93,7 +107,12 @@
       <div class="sidebar-child" id="emojis">
         <p class="subtitle">Error loading emojis</p>
       </div>
-      <div class="sidebar-child" id="recent"><div>🍟 🧇 🍔</div></div>
+      <div
+        class="sidebar-child border-t-[1px] border-b-[1px] box-border"
+        id="recent"
+      >
+        🍟 🧇 🍔
+      </div>
     </div>
     <script src="src/app.js" type="module"></script>
   </body>

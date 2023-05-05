@@ -8,11 +8,10 @@
   box-sizing: border-box;
   width: 300px;
   height: 100vh;
-  border: 1px solid black;
   float: right;
   display: grid;
   gap: 5px;
-  grid-template-rows: 80px 40px 40px auto 60px;
+  grid-template-rows: 80px 50px 40px auto 60px;
   grid-auto-columns: 1fr;
   grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'recent';
 }
@@ -39,7 +38,6 @@ sidebar > #recent {
 
 .sidebar-child {
   padding: 0;
-  border-bottom: 1px solid black;
 }
 
 #categories {
@@ -74,19 +72,6 @@ sidebar > #recent {
 
 #emojis {
   overflow-y: scroll;
-}
-
-.subtitle {
-  font-family: sans-serif;
-  font-size: 1rem;
-  color: grey;
-  margin: 10px 0 10px 0;
-}
-
-.emoji {
-  cursor: pointer;
-  margin: 8px;
-  display: inline-grid;
 }
 
 .emoji-row {

@@ -3,7 +3,7 @@ import initializeEmojis from './initializeEmojis';
 
 const emojis = Object.entries(EMOJI)
   .reduce((ar, [groupName, data]) => {
-    const proecessedData = data.map(row => {
+    const proecessedData = data.map((row) => {
       row.groupName = groupName;
       return row;
     });
@@ -16,8 +16,7 @@ export default function search(e) {
   const { value } = target;
   if ('' === value.trim()) return initializeEmojis();
   const re = new RegExp(value, 'i');
-  const searchResult = emojis
-    .filter(emoji => re.test(emoji.name));
+  const searchResult = emojis.filter((emoji) => re.test(emoji.name));
 
   showEmojis(searchResult);
 }

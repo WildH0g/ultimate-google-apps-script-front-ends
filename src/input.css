@@ -7,7 +7,6 @@
   width: 4px;
   cursor: pointer;
   /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
-
 }
 #emojis::-webkit-scrollbar-track {
   background-color: rgba(229, 231, 235, var(--bg-opacity));

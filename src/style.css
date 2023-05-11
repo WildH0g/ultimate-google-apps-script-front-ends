@@ -11,7 +11,7 @@
   float: right;
   display: grid;
   gap: 5px;
-  grid-template-rows: 80px 50px 40px auto 60px;
+  grid-template-rows: 130px 50px 40px auto 60px;
   grid-auto-columns: 1fr;
   grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'recent';
 }
@@ -50,12 +50,14 @@ sidebar > #recent {
   grid-template-columns: auto auto auto;
 }
 
-#categories *, #about *  {
+#categories *,
+#about * {
   margin: auto;
   text-align: center;
 }
 
-#emojis, #recent {
+#emojis,
+#recent {
   font-size: 1.5rem;
 }
 

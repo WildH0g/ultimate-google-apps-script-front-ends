@@ -1,5 +1,6 @@
 import EMOJI from 'unicode-emoji-json/data-by-group.json';
 import initializeEmojis from './initializeEmojis';
+import renderEmojis from './renderEmojis';
 
 const emojis = Object.entries(EMOJI)
   .reduce((ar, [groupName, data]) => {
@@ -18,22 +19,5 @@ export default function search(e) {
   const re = new RegExp(value, 'i');
   const searchResult = emojis.filter((emoji) => re.test(emoji.name));
 
-  showEmojis(searchResult);
-}
-
-function showEmojis(emojiAr) {
-  const html =
-    '<div class="emoji-row">' +
-    (emojiAr
-      .map(
-        (emojiObj, i) => /* html */ `
-  <span class="m-[8px] cursor-pointer display hover:rotate-[405deg] hover:scale-150 transition-all duration-500 inline-grid emoji" 
-    title="${emojiObj.name}" 
-    data-emoji="${emojiObj.emoji}" 
-    data-emoji-name="${emojiObj.name}"
-  >${emojiObj.emoji}</span>${0 === (i + 1) % 5 ? '<br />' : ''}`
-      )
-      .join('') +
-      '</div>');
-  document.querySelector('div#emojis').innerHTML = html;
+  renderEmojis(searchResult, 'div#emojis');
 }

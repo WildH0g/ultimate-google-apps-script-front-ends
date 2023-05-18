@@ -11,9 +11,9 @@
   float: right;
   display: grid;
   gap: 5px;
-  grid-template-rows: 130px 50px 40px auto 60px;
+  grid-template-rows: 130px 50px 40px auto 120px;
   grid-auto-columns: 1fr;
-  grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'recent';
+  grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'last-used';
 }
 
 sidebar > #about {
@@ -32,8 +32,8 @@ sidebar > #emojis {
   grid-area: emojis;
 }
 
-sidebar > #recent {
-  grid-area: recent;
+sidebar > #last-used {
+  grid-area: last-used;
 }
 
 .sidebar-child {
@@ -57,19 +57,12 @@ sidebar > #recent {
 }
 
 #emojis,
-#recent {
+#last-used {
   font-size: 1.5rem;
 }
 
-#recent {
+#last-used {
   position: relative;
-}
-
-#recent > div {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #emojis {

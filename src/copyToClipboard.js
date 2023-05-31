@@ -3,7 +3,7 @@ import 'toastify-js/src/toastify.css';
 import EMOJIS from 'unicode-emoji-json/data-by-emoji.json';
 import renderEmojis from './renderEmojis';
 import LastUsed from './LastUsed.class';
-const lastUsed = new LastUsed();
+const lastUsed = new LastUsed({ loadCallback: renderLastUsed });
 
 export default function copyToClipboard(target) {
   const selectedEmoji = target.dataset.emoji;
@@ -23,7 +23,7 @@ export default function copyToClipboard(target) {
   }).showToast();
 }
 
-function renderLastUsed(lastUsed) {
+export function renderLastUsed(lastUsed) {
   const lastUsedEmojis = lastUsed.list();
 
   const emojiAr = lastUsedEmojis.reduce((acc, item) => {

@@ -10,17 +10,21 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/assets/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Emojibar</title>
   </head>
   <body>
     <div class="sidebar border-l-[1px] bg-blue-50">
       <div id="about" class="sidebar-child">
-        <img src="src/assets/emojibar-logo.png" width="50">
+        <img src="src/assets/emojibar-logo.png" width="50" />
         <h1
           class="text-purple-500 text-2xl font-bold uppercase tracking-wide animate-bounce pt-3"
         >
-          🍺&nbsp;Emojibar&nbsp;🍷
+          🍻🍹 EMOJIB🥂R 🍸🍺
         </h1>
         <h2 class="text-gray-700 text-xl font-semibold">
           Effortlessly Add Emojis to Google Sheets
@@ -30,18 +34,28 @@
         <div
           class="mx-auto my-auto mt-5 flex w-auto items-center rounded-full border hover:shadow-md pl-5"
         >
-          <span id="search-symbol" class="material-symbols-outlined text-black">
+          <span id="search-symbol" class="material-symbols-outlined text-black -ml-3">
             search
           </span>
           <input
             type="text"
-            class="bg-transparent rounded-full outline-none"
+            class="bg-transparent rounded-full outline-none -mr-4"
             placeholder="Search emojis"
             id="search-bar"
           />
+          <span
+            class="material-symbols-outlined cursor-pointer pr-1 text-red-400"
+            onclick="document.querySelector('input#search-bar').value = ''; initializeEmojis();"
+            title="Clear search"
+          >
+            cancel
+          </span>
         </div>
       </div>
-      <div class="sidebar-child border-t-[1px] border-b-[1px]" id="categories">
+      <div
+        class="sidebar-child border-t-[1px] border-b-[1px] shadow-lg"
+        id="categories"
+      >
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Smileys and Emotion"
@@ -110,9 +124,14 @@
         <p class="subtitle">Error loading emojis</p>
       </div>
       <div
-        class="sidebar-child border-t-[1px] border-b-[1px] box-border"
+        class="sidebar-child border-t-[1px] border-b-[1px] box-borders shadow-lg-up"
         id="last-used"
       >
+        <div class="flex justify-center items-center h-full">
+          <div
+            class="w-12 h-12 rounded-full animate-spin border-y-8 border-dashed border-purple-500 border-t-transparent mx-auto my-auto"
+          ></div>
+        </div>
       </div>
     </div>
     <script src="src/app.js" type="module"></script>

@@ -1,5 +1,9 @@
 export default function scrollTo(target) {
-  const el = document.getElementById(target.dataset.category);
+  const container = document.getElementById('emojis');
+  const el = document.getElementById(target);
   if (null === el) return;
-  el.scrollIntoView();
+  container.scrollTo({
+    top: el.offsetTop - 240,
+    behavior: 'smooth',
+  });
 }

@@ -11,9 +11,10 @@
   float: right;
   display: grid;
   gap: 5px;
-  grid-template-rows: 130px 50px 40px auto 120px;
+  grid-template-rows: 130px 50px 40px auto 105px 100px;
   grid-auto-columns: 1fr;
-  grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'last-used';
+  grid-template-areas: 'about', 'search', 'catgories', 'emojis', 'last-used',
+    'footer';
 }
 
 sidebar > #about {
@@ -36,13 +37,17 @@ sidebar > #last-used {
   grid-area: last-used;
 }
 
+sidebar > #footer {
+  grid-area: footer;
+}
+
 .sidebar-child {
   padding: 0;
 }
 
 #categories {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: 0.5fr repeat(9, 2fr) 0.5fr;
 }
 
 #search {

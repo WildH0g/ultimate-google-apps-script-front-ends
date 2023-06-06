@@ -34,7 +34,10 @@
         <div
           class="mx-auto my-auto mt-5 flex w-auto items-center rounded-full border hover:shadow-md pl-5"
         >
-          <span id="search-symbol" class="material-symbols-outlined text-black -ml-3">
+          <span
+            id="search-symbol"
+            class="material-symbols-outlined text-black -ml-3"
+          >
             search
           </span>
           <input
@@ -57,67 +60,68 @@
         id="categories"
       >
         <span
+          class="material-symbols-outlined text-base hover:text-yellow-600 duration-75"
+        >
+          <a href="javascript:history.back()">arrow_back</a>
+        </span>
+        <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Smileys and Emotion"
-          data-category="Smileys_+_Emotion"
         >
-          mood
+          <a href="/Smileys_+_Emotion" data-navigo>mood</a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="People & Body"
-          data-category="People_+_Body"
         >
-          emoji_people
+          <a href="/People_+_Body" data-navigo>emoji_people</a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Animals & Nature"
-          data-category="Animals_+_Nature"
         >
-          emoji_nature
+          <a href="/Animals_+_Nature" data-navigo>emoji_nature</a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Food & Drink"
-          data-category="Food_+_Drink"
         >
-          emoji_food_beverage
+          <a href="/Food_+_Drink" data-navigo> emoji_food_beverage </a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Travel & Places"
-          data-category="Travel_+_Places"
         >
-          emoji_transportation
+          <a href="/Travel_+_Places" data-navigo> emoji_transportation </a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Activities"
-          data-category="Activities"
         >
-          exercise
+          <a href="/Activities" data-navigo> exercise </a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Objects"
-          data-category="Objects"
         >
-          emoji_objects
+          <a href="/Objects" data-navigo> emoji_objects </a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Symbols"
-          data-category="Symbols"
         >
-          emoji_symbols
+          <a href="/Symbols" data-navigo> emoji_symbols </a>
         </span>
         <span
           class="material-symbols-outlined category hover:scale-125 hover:text-yellow-600 duration-75"
           title="Flags"
-          data-category="Flags"
         >
-          emoji_flags
+          <a href="/Flags" data-navigo> emoji_flags </a>
+        </span>
+        <span
+          class="material-symbols-outlined text-base hover:text-yellow-600 duration-75"
+        >
+          <a href="javascript:history.forward()">arrow_forward</a>
         </span>
       </div>
       <div class="sidebar-child" id="emojis">
@@ -132,6 +136,23 @@
             class="w-12 h-12 rounded-full animate-spin border-y-8 border-dashed border-purple-500 border-t-transparent mx-auto my-auto"
           ></div>
         </div>
+      </div>
+      <div id="footer" class="flex flex-col items-center justify-center">
+        <p class="text-xs text-center px-1 py-1">
+          Enjoying Emojibar? Consider showing your appreciation by
+          <a
+            href="https://www.buymeacoffee.com/wildhog"
+            target="_blank"
+            class="text-yellow-700"
+            >buying me a virtual coffee</a
+          >.
+        </p>
+        <a href="https://www.buymeacoffee.com/wildhog" target="_blank"
+          ><img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            style="height: 60px !important; width: 217px !important"
+        /></a>
       </div>
     </div>
     <script src="src/app.js" type="module"></script>

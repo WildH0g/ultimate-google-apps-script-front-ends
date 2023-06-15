@@ -1,8 +1,14 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+
+function onInstall() {
+  onOpen();
+}
+
 function onOpen() {
   SpreadsheetApp.getUi()
-    .createMenu('😎 Emojis')
-    .addItem('Show emojis', 'openSidebar')
+    .createAddonMenu()
+    .addItem('😎🌞 Show Emojis', 'openSidebar')
     .addToUi();
 }
 

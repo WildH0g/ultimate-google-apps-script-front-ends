@@ -15,7 +15,10 @@
     "prettier:fix": "npm run prettier -- --write",
     "format": "npm run prettier:fix && npm run lint:fix",
     "prepare": "husky install",
-    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "set-env:public": "npx clasp-env --folder . --scriptId 16w0w7hE9JEYttwIEUQptromM6bS61otROrVm54O0KtyxUEo8AWH9J3c5",
+    "set-env:dev": "npx clasp-env --folder . --scriptId 1F7hQIKXVTGo08qF6ZnO7LWcKW7Nt8fSjW-EwcfY6K0AGcUXdKZf3KygB",
+    "set-env:prod": "npx clasp-env --folder . --scriptId 1anz5lvc9s5SusGWAY9gWmgMfmh51dEnsmaAGnyKXARr4KTfnLy_5EUtL"
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.60",
